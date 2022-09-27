@@ -1,0 +1,24 @@
+{
+  "name": "sitePalomaNextJS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/palomacalado/sitePalomaNextJS.git",
+  "author": "palomacalado <palomacalado@yahoo.com.br>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^12.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "bild": "next bild",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "devDependencies": {
+    "@types/node": "18.7.23",
+    "@types/react": "18.0.21",
+    "typescript": "4.8.3"
+  }
+}
