@@ -24,6 +24,7 @@ const Projetos: React.FC = ()=>{
     return (
         <Container>
           <H3>Desenvolvedora</H3>
+          
             <Cards>
               <Developer />
             </Cards>

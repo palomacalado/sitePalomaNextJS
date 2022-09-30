@@ -13,6 +13,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
+import Image from "next/image";
 
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -45,10 +46,11 @@ const ProjectCard: React.FC = ({
 
   return (
     <Card sx={{ width: 345 }}>
+    
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: '#063640' }} aria-label="recipe">
-            {title[0]}
+            {title[1]}
           </Avatar>
         }
         action={
@@ -56,17 +58,17 @@ const ProjectCard: React.FC = ({
             <MoreVertIcon />
           </IconButton>
         }
-        title={title}
+        title={title.replaceAll(`"`,"")}
       />
       <CardMedia
         component="img"
         height="140"
-        image={image}
+        image= {image.replaceAll(`"`,"")}
         alt="Foto ilustrativa do projeto"
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          {preview}
+          {preview.replaceAll(`"`,"")}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -87,7 +89,7 @@ const ProjectCard: React.FC = ({
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>{description} </Typography>
+          <Typography paragraph>{description.replaceAll(`"`,"")} </Typography>
         </CardContent>
       </Collapse>
     </Card>

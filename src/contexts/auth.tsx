@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from 'react';
-import { api, createSession } from '../services/api.js';
+import { api, createSession } from '../services/api';
 
 export const AuthContext = createContext<AuthContextInterface | null>(null);
 
