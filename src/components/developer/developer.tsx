@@ -1,6 +1,6 @@
 import { OnlyCards } from './styles'
 import axios from 'axios'
-import { useEffect, useState,  React } from 'react'
+import { useEffect, useState } from 'react'
 import ProjectCard from '../project-card/project-card'
 import { Skeleton } from "@mui/material";
 

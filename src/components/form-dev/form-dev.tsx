@@ -4,6 +4,7 @@ import TextField from '@material-ui/core/TextField'
 import { Button, Input } from '@material-ui/core'
 import { postDeveloperProject } from '../../services/api'
 
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
@@ -30,18 +31,18 @@ const FormDev: React.FC = () => {
       const fileReader = new FileReader()
 
       if (prop === 'image') {
-      
         fileReader.readAsDataURL(event.target.files[0])
         fileReader.onload = function () {
-          setProject({ ...project, image:JSON.stringify(fileReader.result) })
+          setProject({ ...project, image: JSON.stringify(fileReader.result) })
         }
       }
       setProject({ ...project, [prop]: event.target.value })
     }
 
-  const onSubmit = async() => {
-    event.preventDefault()
-    await postDeveloperProject(project)
+  const onSubmit = async () => {
+    event.preventDefault();
+    await postDeveloperProject(project).then(()=>alert( 'Projeto cadastrado com sucesso!'));
+
   }
   return (
     <form

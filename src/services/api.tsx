@@ -1,5 +1,6 @@
 import axios from 'axios'
 
+
 export const api = axios.create({
   baseURL: 'http://localhost:5000'
 })
@@ -18,9 +19,9 @@ export const postDeveloperProject = async (body: Card) => {
     api.defaults.headers.common['Authorization'] = `Bearer ${token}`
 
     const manipulatedBody = {
-      title:JSON.stringify( body.title),
-      preview: JSON.stringify( body.preview),
-      description: JSON.stringify( body.description),
+      title: JSON.stringify(body.title),
+      preview: JSON.stringify(body.preview),
+      description: JSON.stringify(body.description),
       image: body.image
     }
 
