@@ -8,21 +8,18 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${props => props.theme.colors.background};
+    /* background: ${props => props.theme.colors.background}; */
+    background-image: radial-gradient(circle, #f0e7e2, #98737b);
     color: ${props => props.theme.colors.text};
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Roboto', sans-serif;
+    
   }
 
   a {
     color: ${props => props.theme.colors.background};
     text-decoration: none;
   }
-  code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  h1 {
+    font-family: 'Vidaloka', serif;
 }
 `

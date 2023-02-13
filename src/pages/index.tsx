@@ -13,7 +13,6 @@ const Home: React.FC = () => {
       <main>
       
         <Welcome />
-        <AboutMe />
       </main>
     </>
   )

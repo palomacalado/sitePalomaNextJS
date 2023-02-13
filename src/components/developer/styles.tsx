@@ -1,12 +1,11 @@
 import styled from 'styled-components'
 
 export const OnlyCards = styled.div`
-  width: 80vw;
+  width: 100vw;
   height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding-top: 10px;
 `

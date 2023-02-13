@@ -20,7 +20,6 @@ import { NextPage } from 'next'
 
 const LoginStyle = styled.div`
   min-height: 100vh;
-  background-image: radial-gradient(circle, #f0e7e2, #98737b);
   display: flex;
   justify-content: center;
   flex-direction: column;

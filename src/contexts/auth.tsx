@@ -6,7 +6,7 @@ export const AuthContext = createContext<AuthContextInterface | null>(null);
 export const AuthProvider = ({ children }: any) => {
   const [user, setUser] = useState<user | null>(null);
   const [loading, setLoading] = useState(true);
-  
+
 
   useEffect(() => {
     const recoveredUser = localStorage.getItem('user');
@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }: any) => {
       api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
     }
     setLoading(false);
-    
+
   }, []);
 
   const login = async (email: string, password: string) => {
@@ -29,15 +29,14 @@ export const AuthProvider = ({ children }: any) => {
 
     api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 
-    console.log('login', response.data);
 
     setUser(loggedUser);
-    window.location.href ='/comunidade';
+    window.location.href = '/comunidade';
   };
   const logout = () => {
     localStorage.removeItem('user');
     localStorage.removeItem('token');
-    api.defaults.headers.common['Authorization'] =false;
+    api.defaults.headers.common['Authorization'] = false;
 
     setUser(null);
   };

@@ -14,9 +14,9 @@ const H3 = styled.h3`
   background: "#364d79";
 `;
 const Cards = styled.div`
-  width: 80vw;
-  margin: 15px;
+  width: 100vw;
   display:flex;
+  margin: 20px;
   align-items:center;
   justify-content:center;
 `;

@@ -1,27 +1,26 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  display: flex;
-  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 720px;
+  position: relative;
+  align-self: center;
+`
+export const Title = styled.div`
+  position:absolute;
+  width: 50%;
+  top: calc(50%);
+  left: 50%;
+  justify-content: center;
+  text-align: center;
+  h1{
+    font-size: 64px;
+  }
 `
 
 export const MainText = styled.div`
-
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin: 150px;
-    width: 50vw;
- button{
-    background-color: #D1A8A6;
-    color: #063640; 
-    border-radius: 20px;
-    box-shadow: 1px 1px 6px 0px #063640;
-    text-decoration-line: none;
-    cursor: pointer;
-    text-align:center;
-button :hover{
-    background-color:#063640;
-    color: #D1A8A6;
-}
+  position: absolute;
+  top: 0;
+  width: 50%;
 `

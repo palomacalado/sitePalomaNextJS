@@ -7,12 +7,12 @@ const AboutMe: React.FC = () => {
   return (
     <AboutMeStyle>
       <div>
-        <Image
+        {/* <Image
           src={about}
           alt="colagem de fotos de Paloma Calado"
           width={600}
           height={600}
-        />
+        /> */}
       </div>
       <Description>
         <H3>A vida é curta demais para fazer uma coisa só!</H3> Sou Paloma

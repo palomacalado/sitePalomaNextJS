@@ -6,7 +6,6 @@ width: 100vw;
 background: #063640;
 display: flex;
 justify-content: space-evenly;
-}
 `;
 
 export const Hiperlink = styled.a`

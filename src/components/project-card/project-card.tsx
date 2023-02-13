@@ -13,7 +13,6 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import Image from "next/image";
 
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -45,7 +44,7 @@ const ProjectCard: React.FC = ({
   }
 
   return (
-    <Card sx={{ width: 345 }}>
+    <Card sx={{ width: 245, margin:1 }}>
     
       <CardHeader
         avatar={
@@ -62,7 +61,7 @@ const ProjectCard: React.FC = ({
       />
       <CardMedia
         component="img"
-        height="140"
+        height="300"
         image= {image.replaceAll(`"`,"")}
         alt="Foto ilustrativa do projeto"
       />

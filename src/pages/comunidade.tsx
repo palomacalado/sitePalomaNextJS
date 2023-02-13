@@ -13,7 +13,7 @@ const CommunityStyle = styled.div`
   justify-content: right;
   flex-direction: row;
   align-items: center;
-  padding: 10px;
+  padding: 8px;
 `
 const Comunidade: React.FC = () => {
   const { logout }: any = useContext(AuthContext)
@@ -25,7 +25,7 @@ const Comunidade: React.FC = () => {
 
   return (
     <CommunityStyle>
-      {user?.email === 'paloma.calado@yahoo.com.br' && (
+      {user?.email === 'palomacalado@yahoo.com.br' && (
         <Link href="/novo-projeto-desenvolvedora">
           <Button variant="contained" size="small" color="secondary">
             Adicionar projeto desenvolvedora
